@@ -20,16 +20,21 @@
     <h4>Cloudy</h4>
 </div>
 
-<input type="text" name="" placeholder="Search City..." id="search-bar" class="text-center"  required>
+<!-- <input type="text" name="" placeholder="Search City..." id="search-bar" class="text-center"  required>
 <br>
-<button onclick="getWeatherData()" id="searchbutton" class="btn bg-primary">Search</button>
-<div class="result">
+<button onclick="getWeatherData()" id="searchbutton" class="btn bg-primary">Search</button> -->
+
+<div class="search-box">
+    <input type="text" placeholder="Search City..." id="search-bar" required>
+    <button onclick="getWeatherData()" id="searchbutton" class="btn btn-primary">Search</button>
+</div>
+<div class="result" id="weather-card">
     <h1 id="weather-type">-------</h1>
     <div>
         <h3 id="city-name">----------</h3>
-        <h3>Temperature: <span id="Temperature"></span> <span>--°F</span></h3>
-        <h3>Min-Temp<span id="Min-Temp"></span> <span>--°F</span> </h3>
-        <h3>Max-Temp: <span id="Max-Temp"></span> <span>--°F</span></h3>
+        <h3>Temperature: <span id="Temperature"></span> <span>--</span></h3>
+        <h3>Min-Temp<span id="Min-Temp"></span> <span>--°C</span> </h3>
+        <h3>Max-Temp: <span id="Max-Temp"></span> <span>--°C</span></h3>
     </div>
 </div>
 
